@@ -14,5 +14,6 @@
   "description": "",
   "dependencies": {
     "node-fetch": "^3.2.6"
-  }
+  },
+  "type" : "module"
 }
