@@ -13,7 +13,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "node-fetch": "^3.2.6"
-  },
-  "type" : "module"
+    "node-fetch": "^2.6.7"
+  }
 }
