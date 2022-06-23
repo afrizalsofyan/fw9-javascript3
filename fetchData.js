@@ -1,17 +1,11 @@
-import fetch from "node-fetch"
-const dataUser = fetch('https://jsonplaceholder.typicode.com/users')
-.then((response)=>{
-    return response.json()
-})
-.then((datas)=>{
-    let arrName = []
-    datas.map((el)=>{
-        let names = `${el.name}`
-        // console.log(name);
-        return arrName.push(names)
-    })
-    console.log(arrName.join(" - "))
-})
-.catch((e)=>console.log(e.message))
+const fetch = require("node-fetch");
+const dataUser = fetch("https://jsonplaceholder.typicode.com/usersa")
+  .then((response) =>
+    response
+      .json()
+      .then((datas) => datas.forEach((el) => console.log(el.name)))
+      .catch((e) => console.log(e.name))
+  )
+  .catch((e) => console.log(e.message));
 
-dataUser
+dataUser;
